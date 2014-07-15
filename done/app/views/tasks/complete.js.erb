@@ -1,0 +1,3 @@
+
+
+$("[data-id='<%= @task.id%>']").replaceWith("<%= j render partial: "tasks/task", locals: { task: @task} %>");

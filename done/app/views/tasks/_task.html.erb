@@ -1,7 +1,12 @@
-<li class="<%= 'done' if task.done? %>">
+<li class="<%= 'done' if task.done? %>" data-id="<%= task.id%>">
   <div class="col-xs-11">
     <span class="title"><%= task.title %></span>
   </div>
-  <div class="col-xs-1">	<button class="btn <%= button_class_for_task(task) %> btn-block">X</button>
+  <div class="col-xs-1">
+    <% if task.done? %>
+      <%= link_to "X", task, method: :delete, remote: true, class:"btn #{button_class_for_task(task) } btn-block", "data-confirm"=> "Really? Really?"%>
+    <% else %>
+      <%= link_to "X", complete_task_path(task), remote: true, method: :patch, class:"btn #{button_class_for_task(task) } btn-block" %>
+    <% end %>
   </div>
 </li>

@@ -8,4 +8,15 @@ class TasksController < ApplicationController
     @task = Task.new params.require(:task).permit(:title)
     @task.save
   end
+
+  def complete
+    @task = Task.find(params[:id])
+    @task.done = true
+    @task.save
+  end
+
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+  end
 end
