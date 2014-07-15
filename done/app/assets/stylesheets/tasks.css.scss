@@ -1,0 +1,19 @@
+.items {
+  padding-top: 2em;
+  li {
+    font-size: 3rem;
+    margin-bottom: 2em;
+  }
+  li.done {
+    color: #95a5a6;
+    span {
+      text-decoration: line-through;
+    }
+  }
+}
+
+
+.newtodo {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
