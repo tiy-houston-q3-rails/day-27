@@ -4,9 +4,9 @@ Day 27
 Lab Week 6 Groups
 ----------------
 
-Group: david, nandita, alex
-Group: sean, ayaz, eric
-Group: kevin, adrianne,
+Group: david, nandita, alex  
+Group: sean, ayaz, eric  
+Group: kevin, adrianne
 
 
 Lab Week 6: Memer
