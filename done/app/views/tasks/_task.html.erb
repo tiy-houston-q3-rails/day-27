@@ -1,0 +1,7 @@
+<li class="<%= 'done' if task.done? %>">
+  <div class="col-xs-11">
+    <span class="title"><%= task.title %></span>
+  </div>
+  <div class="col-xs-1">	<button class="btn <%= button_class_for_task(task) %> btn-block">X</button>
+  </div>
+</li>

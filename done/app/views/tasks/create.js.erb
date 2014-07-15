@@ -1,0 +1,3 @@
+// Insert newly created task, at top of tasks
+
+$(".items").prepend("<%= j render partial: "tasks/task", locals: { task: @task} %>");
